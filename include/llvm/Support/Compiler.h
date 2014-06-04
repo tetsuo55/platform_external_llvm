@@ -40,17 +40,6 @@
 # endif
 #endif
 
-/// \brief Does the compiler support r-value references?
-/// This implies that <utility> provides the one-argument std::move;  it
-/// does not imply the existence of any other C++ library features.
-#if (__has_feature(cxx_rvalue_references)   \
-     || defined(__GXX_EXPERIMENTAL_CXX0X__) \
-     || (defined(_MSC_VER) && _MSC_VER >= 1600))
-#define LLVM_HAS_RVALUE_REFERENCES 1
-#else
-#define LLVM_HAS_RVALUE_REFERENCES 0
-#endif
-
 /// \brief Does the compiler support r-value reference *this?
 ///
 /// Sadly, this is separate from just r-value reference support because GCC
