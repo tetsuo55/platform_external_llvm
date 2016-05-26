@@ -3635,6 +3635,7 @@ index 0000000..7464c98
 +LOCAL_MODULE_TARGET_ARCH := $(LLVM_SUPPORTED_ARCH)
 +
 +LOCAL_CLANG := true
++LOCAL_ARM_MODE := arm
 +
 +LOCAL_CFLAGS :=	\
 +	-D_GNU_SOURCE	\
@@ -3743,6 +3744,7 @@ index 0000000..7e96615
 +++ b/llvm-host-build.mk
 @@ -0,0 +1,64 @@
 +LOCAL_CLANG := true
++LOCAL_ARM_MODE := arm
 +
 +LOCAL_CFLAGS +=	\
 +	-D_GNU_SOURCE	\

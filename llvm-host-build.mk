@@ -2,6 +2,7 @@
 ifneq ($(HOST_OS),windows)
 LOCAL_CLANG := true
 endif
+LOCAL_ARM_MODE := arm
 
 LOCAL_CFLAGS +=	\
 	-D_GNU_SOURCE	\
